@@ -768,7 +768,7 @@ Begin
 		[CmdletBinding(HelpURI='cmd')] param()
 
 		Write-Verbose 'setting time zone'
-		tzutil /s 'Eastern Standard Time'
+		tzutil /s 'Central Standard Time'
 	}
 }
 Process
@@ -803,27 +803,27 @@ Process
 	InstallTools
 
 	# $home\Documents\WindowsPowerShell
-	GetPowerShellProfile
+	# GetPowerShellProfile
 
 	SetTimeZone
-	SetExplorerProperties
-	SetKeyboardProperties
+	# SetExplorerProperties
+	# SetKeyboardProperties
 	SetExtras
-	EnableHyperVEnhancedMode
+	# EnableHyperVEnhancedMode
 	DisableHomeGroups
 	EnablePhotoViewer
 	EnableRemoteDesktop
 	RemoveCrapware
 	SecurePagefile
-	ScheduleTempCleanup
+	# ScheduleTempCleanup
 
 	# requires powershell profile scripts
 	DisableZipFolders
 
-	GetYellowCursors
-	SetConsoleProperties
+	# GetYellowCursors
+	# SetConsoleProperties
 	#SetEdgePreferences # DO THIS MANUALLY
-	CreateHeadlessPowerPlan
+	# CreateHeadlessPowerPlan
 	FixAirpodConnectivity
 
 	$line = New-Object String('*',80)
